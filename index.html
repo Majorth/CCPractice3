@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+</head>
+<body>
+    <style>
+        a {
+          color: #000;
+        }
+        a:hover {
+          color: blue;
+        }
+        body{
+            min-height: 150vh;
+        }
+      h2 {
+          position: relative;
+          top: 15px;
+          left:15px;
+          bottom:10px;
+      }/*relative position specifies movement relative to its current position per the offsets.*/
+      #searchbar {
+          position: absolute;
+          top: 50px;
+          right: 50px;
+      }/*look for it. it's all the way to the right. it's locked relative to its parent container.*/
+      #navbar {
+    position:fixed;
+    top:0px;
+    left:10px;
+    width: 100%;
+    background-color: #767676;
+  }
+  /*moved the navigation bar to the top, obscuring the top, but fixing the bar.*/
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+      </style>
+      <a href="https://freecatphotoapp.com/" target="_blank">CatPhotoApp</a>
+
+      <h1>On Being Well-Positioned</h1>
+      <h2>Move me!</h2>
+      <p>I still think the h2 is where it normally sits.</p>
+
+      <h1>Welcome!</h1>
+      <nav id="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <p>I shift up when the #navbar is fixed to the browser window.</p>
+</body>
+</html>
